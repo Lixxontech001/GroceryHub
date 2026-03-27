@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-&!4%-vjbqun^7idhr9ov$3*!233xczz4zt4i1bj_x&ur14makw
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -39,6 +39,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -73,8 +74,8 @@ AUTH_USER_MODEL = 'accounts.Account'
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'eshop',
-#         'USER' : 'omarreda',
+#         'NAME': 'groceryhub',
+#         'USER' : 'lixxon_tech',
 #         'PASSWORD' : os.environ.get('DB_PASS'),
 #         'HOST' : 'e-shop.cmesgttozqee.us-west-2.rds.amazonaws.com',
 #         'PORT' : '5432',
@@ -127,6 +128,8 @@ USE_THOUSAND_SEPARATOR = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
