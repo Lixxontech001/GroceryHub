@@ -43,7 +43,7 @@ It is designed for supermarkets, mini-marts, and local grocery businesses to sel
 
 ## 📸 Screenshots
 
-*(Add screenshots here after deployment for better presentation)*
+**
 
 ---
 
@@ -54,6 +54,7 @@ It is designed for supermarkets, mini-marts, and local grocery businesses to sel
 git clone <your-repo-link>
 cd groceryhub
 
+```bash
 Create virtual environment:
 py -m venv venv
 
