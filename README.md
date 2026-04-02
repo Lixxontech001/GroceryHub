@@ -55,12 +55,15 @@ git clone [https://github.com/Lixxontech001/GroceryHub/
 cd groceryhub
 
 ```
-Create virtual environment:
+Create virtual environment
+```
+
 py -m venv venv
+```
 
 
-```bash
 Activate environment:
+```
 .\venv\Scripts\activate
 
 ```
@@ -87,7 +90,7 @@ http://localhost:8000/
 Create admin user:
 
 ```
-```bash
+
 py manage.py createsuperuser
 
 
@@ -120,7 +123,8 @@ Multi-vendor support
  Contact
 
 If you want a custom version of this project for your business, feel free to reach out.
+Email: lixxontech@gmail.com
 
 ```
-```bash
+
 ⭐ If you found this useful, give it a star!
